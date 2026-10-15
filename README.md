@@ -55,7 +55,7 @@ See `opencode.example.jsonc` for all options.
 {
   "plugins": [
     {
-      "package": "https://git.boxo.cc/massivebox/opencode-v2-telegram-notify.git",
+      "package": "git+https://git.boxo.cc/massivebox/opencode-v2-telegram-notify.git",
       "options": { "botToken": "123456:ABC-DEF...", "chatId": "123456789" }
     }
   ]
