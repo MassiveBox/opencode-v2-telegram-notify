@@ -1,0 +1,22 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugins": [
+    {
+      "package": "/home/massive/Dev/opencode-v2-telegram-notify",
+      "options": {
+        // Either put the secrets here or export TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID.
+        // "botToken": "123456:ABC-DEF...",
+        // "chatId": "123456789",
+        "notifyOn": [
+          "permission.asked",
+          "form.created",
+          "session.execution.succeeded",
+          "session.execution.failed",
+          "session.execution.interrupted"
+        ],
+        "prefix": "🖥 homelab",
+        "includeSessionTitle": true
+      }
+    }
+  ]
+}

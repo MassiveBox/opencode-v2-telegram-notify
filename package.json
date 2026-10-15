@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "opencode-v2-telegram-notify",
+  "version": "0.1.0",
+  "description": "OpenCode v2 plugin that sends Telegram notifications when user interaction is required and on notable session events.",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/index.ts",
+    "./server": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "index.ts",
+    "README.md",
+    "LICENSE",
+    "opencode.example.jsonc"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@opencode/plugin": "^2.0.27"
+  },
+  "devDependencies": {
+    "@opencode/plugin": "^2.0.29",
+    "typescript": "^5.9.3"
+  }
+}
